@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Logo ImageView -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/img" />
+
+    <!-- Play/Pause Button -->
+    <ImageView
+        android:id="@+id/play_pause_btn"
+        android:layout_width="51dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/play" />
+    <!-- Play/Pause Button -->
+    <ImageView
+        android:id="@+id/play_pause_btn1"
+        android:layout_width="51dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/pause" />
+
+    <!-- Next Button -->
+    <ImageView
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/play_pause_btn"
+        android:layout_alignTop="@+id/play_pause_btn"
+        android:src="@drawable/next" />
+
+    <!-- Previous Button -->
+    <ImageView
+        android:id="@+id/previous_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/play_pause_btn"
+        android:layout_alignTop="@+id/play_pause_btn"
+        android:src="@drawable/previous" />
+
+    <!-- SeekBar -->
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play_pause_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Song Name TextView -->
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Song Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>
